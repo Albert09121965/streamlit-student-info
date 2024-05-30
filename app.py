@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import seaborn as sns
 
 st.title("Student Information") # Title of the app
 student_name = st.text_input("Enter the student's name:") # Text input for student's name
