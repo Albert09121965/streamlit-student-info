@@ -7,7 +7,7 @@ st.title("Student Information") # Title of the app
 student_name = st.text_input("Enter the student's name:") # Text input for student's name
 student_age = st.slider("Select the student's age:", 1, 100) # Slider for student's age
 
-df_age = pd.DataFrame({'âge': list(range(int(student_age), int(student_age)+11)),'second column': np.arange(10, 101, 10)})
+df_age = pd.DataFrame({'âge': list(range(1, 11)),'second column': np.arange(10, 101, 10)})
 
 
 # Button to display the input text and age
