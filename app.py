@@ -1,11 +1,14 @@
 # app.py
 import streamlit as st
+import pandas as pd
+import numpy as np
 
 st.title("Student Information") # Title of the app
 student_name = st.text_input("Enter the student's name:") # Text input for student's name
 student_age = st.slider("Select the student's age:", 1, 100) # Slider for student's age
 student_age =int(student_age) # transformer en integer
-df_age = pd.DataFrame({'âge': list(range(student_age), student_age+11)),'second column': np.arange(10, 101, 10))
+df_age = pd.DataFrame({'âge': list(range(student_age, student_age+11)),'second column': np.arange(10, 101, 10)})
+
 
 # Button to display the input text and age
 if st.button("Display Information"):
